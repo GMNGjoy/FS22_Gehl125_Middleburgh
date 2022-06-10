@@ -12,10 +12,8 @@
             <set path="vehicle.base.filename" value="../FS22_Gehl125_Westby/mixall.i3d" />
 
             <!-- update to use a shared wheel instead of a custom config -->
-            <set path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(0)#filename" value="$data/shared/wheels/tires/trelleborg/T404/500_45R22_5.xml" />
-            <set path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(1)#filename" value="$data/shared/wheels/tires/trelleborg/T404/500_45R22_5.xml" />
-            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(0)#radius" />
-            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(1)#radius" />
+            <set path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(0)#filename" value="$data/shared/wheels/tires/trelleborg/AW305/360_70R16.xml" />
+            <set path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(1)#filename" value="$data/shared/wheels/tires/trelleborg/AW305/360_70R16.xml" />
 
             <!-- here are the critical changes to convert it to be a grinder for Middleburgh -->
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#fillTypes" value="MAIZE BARLEY" />
