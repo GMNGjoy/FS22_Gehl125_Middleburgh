@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="trailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="../FS22_Gehl125_Westby/125.xml">
+        <attributes>
+            <!-- update the name to the new name -->
+            <set path="vehicle.storeData.name" value="Gehl 125 Grinder for Middleburgh"/>
+
+            <!-- update the paths in the extended mod to reference the same from here -->
+            <set path="vehicle.storeData.image" value="../FS22_Gehl125_Westby/store1.dds"/>
+            <set path="vehicle.base.filename" value="../FS22_Gehl125_Westby/mixall.i3d" />
+
+            <!-- update to use a shared wheel instead of a custom config -->
+            <set path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(0)#filename" value="$data/shared/wheels/tires/trelleborg/T404/500_45R22_5.xml" />
+            <set path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(1)#filename" value="$data/shared/wheels/tires/trelleborg/T404/500_45R22_5.xml" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(0)#radius" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(1)#radius" />
+
+            <!-- here are the critical changes to convert it to be a grinder for Middleburgh -->
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#fillTypes" value="MAIZE BARLEY" />
+            <set path="vehicle.dischargeable.dischargeNode.fillType#converterName" value="MAIZE_TO_CRACKEDCORN" />
+            <set path="vehicle.dischargeable.dischargeNode.effects.effectNode#defaultFillType" value="CRACKEDCORN CRACKEDBARLEY" />
+            
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>Gehl 125 Grinder for Middleburgh</name>
+        <image>../FS22_Gehl125_Westby/store1.dds</image>
+        <brand>GEHL</brand>
+        <category>trailers</category>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+</vehicle>

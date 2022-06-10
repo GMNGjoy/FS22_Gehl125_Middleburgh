@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="61">
+    <author>GMNGjoy</author>
+    <version>1.0.0</version>
+    <title>
+        <en>Gehl 125 Grinder for Middleburgh</en>
+    </title>
+    <description>
+        <en>
+<![CDATA[Gehl 125 from the Westby, WI map Buildings Pack Updated for FS22_Middleburgh to process Cracked Corn and Rolled Barley in small quantities.
+
+The FS22_Gehl125_Westby mod is required for this mod to work - please download here and support the original modder:
+https://mb-farms.itch.io/fs22-westby-wi-4x-map
+
+This mod will convert the following custom fill types on the Middleburgh, NY map by Nitrodad:
+1L MAIZE to 1L CRACKEDCORN
+1L BARLEY to 1L CRACKEDBARLEY
+
+Respect to the original mod authors: JMF &amp; Diniz Farms
+Thanks Mighty Mike Farms for the tutorial and idea: https://www.youtube.com/watch?v=iu08CES6GAU
+]]>
+        </en>
+    </description>
+    <iconFilename>../FS22_Gehl125_Westby/icon.dds</iconFilename>
+    <multiplayer supported="true" />
+
+    <storeItems>
+        <storeItem xmlFilename="gehl125.xml"/>
+    </storeItems>
+
+    <dependencies>
+        <depencency>FS22_Gehl125_Westby</depencency>
+    </dependencies>
+
+    <brands>
+        <brand name="GEHL" title="Gehl" image="../FS22_Gehl125_Westby/brand.dds" />
+    </brands>
+
+    <fillTypes filename="middleburgh_fillTypes.xml" />
+</modDesc>
