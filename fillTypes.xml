@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.5.0.0/fillTypes.xsd"> 
+    <fillTypeConverters>
+        <fillTypeConverter name="MAIZE_TO_CRACKEDCORN">
+            <converter from="MAIZE" to="CRACKEDCORN" factor="1.0" />
+			<converter from="BARLEY" to="ROLLEDBARLEY" factor="1.0" />
+        </fillTypeConverter>
+    </fillTypeConverters>
+    
+    <fillTypes>
+        <fillType name="CRACKEDCORN" title="Cracked Corn" showOnPriceTable="false">
+            <textures   diffuse ="$data/fillPlanes/maize_diffuse.png"
+                        normal  ="$data/fillPlanes/maize_normal.png"
+                        specular="$data/fillPlanes/maize_specular.png"
+                        distance="$data/fillPlanes/distance/maizeDistance_diffuse.png" />
+        </fillType>
+        <fillType name="ROLLEDBARLEY" title="Rolled Barley" showOnPriceTable="false">
+            <textures   diffuse ="$data/fillPlanes/barley_diffuse.png"
+                        normal  ="$data/fillPlanes/barley_normal.png"
+                        specular="$data/fillPlanes/barley_specular.png"
+                        distance="$data/fillPlanes/distance/barleyDistance_diffuse.png" />
+        </fillType>
+    </fillTypes>
+    
+    <fillTypeCategories>
+        <fillTypeCategory name="BULK" >CRACKEDCORN ROLLEDBARLEY</fillTypeCategory>
+        <fillTypeCategory name="AUGERWAGON" >CRACKEDCORN ROLLEDBARLEY</fillTypeCategory>
+        <fillTypeCategory name="TRAINWAGON" >CRACKEDCORN ROLLEDBARLEY</fillTypeCategory>
+        <fillTypeCategory name="SHOVEL" >CRACKEDCORN ROLLEDBARLEY</fillTypeCategory>
+        <fillTypeCategory name="FARMSILO" >CRACKEDCORN ROLLEDBARLEY</fillTypeCategory>
+        <fillTypeCategory name="LOADINGVEHICLE">CRACKEDCORN ROLLEDBARLEY</fillTypeCategory>
+    </fillTypeCategories>
+</map>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.5.0.0/fillTypes.xsd"> 
-    <fillTypeConverters>
-        <fillTypeConverter name="MAIZE_TO_CRACKEDCORN">
-            <converter from="MAIZE" to="CRACKEDCORN" factor="1.0" />
-			<converter from="BARLEY" to="ROLLEDBARLEY" factor="1.0" />
-        </fillTypeConverter>
-    </fillTypeConverters>   
-</map>

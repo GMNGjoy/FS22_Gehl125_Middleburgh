@@ -36,5 +36,5 @@ Thanks Mighty Mike Farms for the tutorial and idea: https://www.youtube.com/watc
         <brand name="GEHL" title="Gehl" image="../FS22_Gehl125_Westby/brand.dds" />
     </brands>
 
-    <fillTypes filename="middleburgh_fillTypes.xml" />
+    <fillTypes filename="fillTypes.xml" />
 </modDesc>
