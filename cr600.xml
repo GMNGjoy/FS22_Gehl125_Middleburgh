@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="trailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="../FS22_Lizard_CR_600/CR600.xml">
+        <attributes>
+            <!-- update the name to the new name -->
+            <set path="vehicle.storeData.name" value="CR 600 for Middleburgh"/>
+
+            <!-- update the paths in the extended mod to reference the same from here -->
+            <set path="vehicle.storeData.image" value="../FS22_Lizard_CR_600/shared/store.dds"/>
+            <set path="vehicle.base.filename" value="../FS22_Lizard_CR_600/CR600.i3d" />
+
+            <!-- here are the critical changes to convert it to be a grinder for Middleburgh -->
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#fillTypes" value="MAIZE BARLEY STONE SUGARBEET" />
+            <set path="vehicle.dischargeable.dischargeNode#emptySpeed" value="300" />
+            <set path="vehicle.dischargeable.dischargeNode.fillType#converterName" value="CR600_GRINDER" />
+            <set path="vehicle.dischargeable.dischargeNode.effects.effectNode(0)#defaultFillType" value="CRACKEDCORN CRACKEDBARLEY LIME SUGARBEET_CUT" />
+            <set path="vehicle.dischargeable.dischargeNode.effects.effectNode(1)#defaultFillType" value="CRACKEDCORN CRACKEDBARLEY LIME SUGARBEET_CUT" />
+            
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>CR 600 for Middleburgh</name>
+        <image>../FS22_Lizard_CR_600/shared/store.dds</image>
+        <brand>LIZARD</brand>
+        <category>misc</category>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+</vehicle>
