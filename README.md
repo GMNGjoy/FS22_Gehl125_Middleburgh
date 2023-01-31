@@ -1,10 +1,12 @@
 # Gehl 125 Grinder for Middleburgh
+This is an extension mod for the Gehl125 grinder to add the ability to grind `CRACKEDCORN` and `ROLLEDBARLEY`, as well as adding bulk `fillTypes` for both, and adding both items to the `fillTypeCategories` to allow it to be transported via trailer & stored in a silo in Farming Simulator 22.
+
+Unlike most other mod edits - this mod instead leverages in-game functionality to "extend" the assets & functionality of one mod into this mod without editing or touching the original. Because of this method, it is required to have both mods FS22_Gehl125_Westby.zip & FS22_Gehl125_Middleburgh.zip downloaded to your mod folder.
 
 - This Mod is customized for use on the Middleburgh, NY map by Nitrodad1115 (https://nitrodad1115.itch.io/fs22-middleburgh).
 - The original Gehl Grinder is part of the Westby, WI map buildings pack by MB Farms. (https://mb-farms.itch.io/fs22-westby-wi-4x-map)
 - Suggestion of this conversion came from Mighty Mike Farms (https://www.youtube.com/watch?v=iu08CES6GAU)
 
-Both mods `FS22_Gehl125_Westby.zip` & `FS22_Gehl125_Middleburgh.zip` are required to be in your mod folder.
 
 ## Installation Instructions
 1. Download this release, put in your mod folder
