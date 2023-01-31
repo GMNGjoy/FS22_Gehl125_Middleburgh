@@ -12,7 +12,7 @@
             <set path="vehicle.base.filename" value="../FS22_Lizard_CR_600/CR600.i3d" />
 
             <!-- here are the critical changes to convert it to be a grinder for Middleburgh -->
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#fillTypes" value="MAIZE BARLEY STONE SUGARBEET" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#fillTypes" value="MAIZE BARLEY STONE SUGARBEET WOOD WOODCHIPS STRAW GRASS SILAGE GRASS_WINDROW DRYGRASS_WINDROW" />
             <set path="vehicle.dischargeable.dischargeNode#emptySpeed" value="300" />
             <set path="vehicle.dischargeable.dischargeNode.fillType#converterName" value="CR600_GRINDER" />
             <set path="vehicle.dischargeable.dischargeNode.effects.effectNode(0)#defaultFillType" value="CRACKEDCORN CRACKEDBARLEY LIME SUGARBEET_CUT" />
